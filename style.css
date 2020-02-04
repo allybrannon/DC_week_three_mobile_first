@@ -1,0 +1,126 @@
+html {
+    color: rgb(58, 56, 56);
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/bee_background2.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: underline;
+    color: black;
+}
+
+p {
+    margin-top: 10em;
+}
+/*--- Container ---*/
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+ .wrapper > * {
+     padding: 20px;
+ }
+
+ /*--- Header ---*/
+
+header{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+ }
+
+ .logo {
+     font-weight: bold;
+ }
+ .page-header ul {
+     display: flex;
+     order: 1;
+     margin-top: 15px;
+     margin-bottom: 15px;
+ }
+
+ .page-header ul li {
+     display: flex;
+     font-family: inherit;
+     font-size: 1.2 rem;
+     padding: 5px 18px;
+     border: 1px solid;
+     border-radius: 5px;
+ }
+
+ /*--- Main ---*/
+
+ .story {
+display: flex;
+flex-direction: column;
+justify-content: center;
+flex-grow: 1;
+min-height: 350px
+ }
+
+ .story div {
+     max-width: 500px;
+ }
+
+ .story h2{
+     margin-bottom: 20px;
+ }
+
+ /*--- Footer ---*/
+ .footer {
+     display: flex;
+     flex-direction: column-reverse;
+ }
+
+ .footer a {
+     display: flex;
+     font-size: 1rem;
+     margin-bottom: 3px;
+ }
+
+ /*--- Media screen ---*/
+
+ @media screen and (min-width: 320px) {
+     .page-header ul {
+         /* width: auto; */
+         margin-top: 3;
+     }
+     .footer {
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+     }
+ }
+
+ @media screen and (min-width: 768px) {
+     body {
+         font-size: 18px;
+     }
+     .page-main {
+         padding-left: 90px;
+     }
+ }
+
